@@ -22,4 +22,18 @@ describe('parseRGB', function() {
 
     })
 
+    it('should return {255,255,255} when passed #ffffff', function() {
+        // arrange
+        let fn = require("../index")
+        let input = "#ffffff"
+        let expected = { r: 255, g: 255, b: 255 }
+
+        // act
+        let actual = fn(input)
+
+        // assert
+        assert.equal(actual, expected)
+
+    })
+
 });
