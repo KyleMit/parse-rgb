@@ -32,7 +32,7 @@ describe('parseRGB', function() {
         let actual = fn(input)
 
         // assert
-        assert.equal(actual, expected)
+        assert.deepEqual(actual, expected)
 
     })
 
