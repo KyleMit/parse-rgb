@@ -36,4 +36,20 @@ describe('parseRGB', function() {
 
     })
 
+
+    it('should return {0,0,0} when passed #000000', function() {
+        // arrange
+        let fn = require("../index")
+        let input = "#000000"
+        let expected = { r: 0, g: 0, b: 0 }
+
+        // act
+        let actual = fn(input)
+
+        // assert
+        assert.deepEqual(actual, expected)
+
+    })
+
+
 });
